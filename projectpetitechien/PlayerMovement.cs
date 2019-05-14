@@ -20,17 +20,17 @@ public class PlayerMovement : KinematicBody2D
     {
         motion.y += gravity * delta;
 
-        if(Input.IsActionPressed("WalkLeft"))
+        if (Input.IsActionPressed("WalkLeft"))
         {
             motion.x = -speed * delta;
         }
-        if(Input.IsActionPressed("WalkRight"))
+        if (Input.IsActionPressed("WalkRight"))
         {
             motion.x = speed * delta;
         }
-        if(Input.IsActionPressed("Jump"))
+        if (Input.IsActionPressed("Jump"))
         {
-            
+
         }
         this.MoveAndSlide(motion, new Vector2(0, -1f));
 
