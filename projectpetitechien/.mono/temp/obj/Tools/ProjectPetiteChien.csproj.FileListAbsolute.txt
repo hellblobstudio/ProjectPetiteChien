@@ -1,0 +1,5 @@
+F:\godot\projectpetitechien\.mono\temp\bin\Tools\ProjectPetiteChien.dll
+F:\godot\projectpetitechien\.mono\temp\bin\Tools\ProjectPetiteChien.pdb
+F:\godot\projectpetitechien\.mono\temp\obj\Tools\ProjectPetiteChien.csprojResolveAssemblyReference.cache
+F:\godot\projectpetitechien\.mono\temp\obj\Tools\ProjectPetiteChien.dll
+F:\godot\projectpetitechien\.mono\temp\obj\Tools\ProjectPetiteChien.pdb
