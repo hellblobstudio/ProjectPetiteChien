@@ -30,7 +30,6 @@ public class PlayerMovement : KinematicBody2D
         }
         if (Input.IsActionPressed("Jump"))
         {
-
         }
         this.MoveAndSlide(motion, new Vector2(0, -1f));
 
