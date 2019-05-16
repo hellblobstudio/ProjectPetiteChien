@@ -28,8 +28,10 @@ public class PlayerMovement : KinematicBody2D
         {
             motion.x = speed * delta;
         }
-        if (Input.IsActionPressed("Jump"))
+        if (Input.IsActionJustPressed("Jump"))
         {
+            GD.Print("HIER");
+            motion.y = - 500;
         }
         this.MoveAndSlide(motion, new Vector2(0, -1f));
 
