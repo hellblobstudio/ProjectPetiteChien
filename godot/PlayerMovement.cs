@@ -3,10 +3,10 @@ using System;
 
 public class PlayerMovement : KinematicBody2D, IDamageable
 {
-    public float gravity = 30f;
+    public float gravity = 50f;
     public float speed = 500f;
     public int frameRate = 60;
-    public int jumpStrength = -900;
+    public int jumpStrength = -20;
 
     private Vector2 motion;
 
@@ -15,6 +15,7 @@ public class PlayerMovement : KinematicBody2D, IDamageable
         motion = new Vector2();
         gravity *= frameRate;
         speed *= frameRate;
+        jumpStrength *= frameRate;
     }
 
     public override void _PhysicsProcess(float delta)
