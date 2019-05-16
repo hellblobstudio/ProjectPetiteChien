@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public class PlayerMovement : KinematicBody2D
+public class PlayerMovement : KinematicBody2D, IDamageable
 {
     public float gravity = 30f;
     public float speed = 500f;
@@ -43,5 +43,10 @@ public class PlayerMovement : KinematicBody2D
         this.MoveAndSlide(motion, new Vector2(0, -1f));
 
         motion.x = 0;
+    }
+
+    public void takeDamage(Vector2 damageFrom)
+    {
+        throw new NotImplementedException();
     }
 }
