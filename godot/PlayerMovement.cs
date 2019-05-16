@@ -36,9 +36,16 @@ public class PlayerMovement : KinematicBody2D, IDamageable
         {
             motion.x = speed * delta;
         }
-        if (Input.IsActionPressed("Jump") && IsOnFloor())
+        if (Input.IsActionPressed("Jump"))
         {
+            if(IsOnFloor()) {
             motion.y = jumpStrength;
+            }
+            else {
+                if(motion.y <= 0) {
+                    motion.y += Math.Min(jumpStrength * delta, gravity * delta);
+                }
+            }
         }
         this.MoveAndSlide(motion, new Vector2(0, -1f));
 
