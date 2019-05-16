@@ -8,4 +8,4 @@ func _ready():
 	
 
 func _physics_process(delta):
-	self.global_position = lerp(self.global_position, player.global_position, 0.1)
+	self.global_position = lerp(self.global_position, player.global_position, 0.2)

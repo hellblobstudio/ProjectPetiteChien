@@ -3,9 +3,10 @@ using System;
 
 public class PlayerMovement : KinematicBody2D
 {
-    public float gravity = 9.81f;
-    public float speed = 200f;
+    public float gravity = 30f;
+    public float speed = 500f;
     public int frameRate = 60;
+    public int jumpStrength = -900;
 
     private Vector2 motion;
 
@@ -18,8 +19,15 @@ public class PlayerMovement : KinematicBody2D
 
     public override void _PhysicsProcess(float delta)
     {
-        motion.y += gravity * delta;
-
+        if(!IsOnFloor())
+        {
+            motion.y += gravity * delta;
+        }
+        else
+        {
+            motion.y = 0;
+        }
+        
         if (Input.IsActionPressed("WalkLeft"))
         {
             motion.x = -speed * delta;
@@ -28,10 +36,9 @@ public class PlayerMovement : KinematicBody2D
         {
             motion.x = speed * delta;
         }
-        if (Input.IsActionJustPressed("Jump"))
+        if (Input.IsActionPressed("Jump") && IsOnFloor())
         {
-            GD.Print("HIER");
-            motion.y = - 500;
+            motion.y = jumpStrength;
         }
         this.MoveAndSlide(motion, new Vector2(0, -1f));
 

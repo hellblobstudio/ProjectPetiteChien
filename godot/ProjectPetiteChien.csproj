@@ -49,6 +49,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IDamageable.cs" />
     <Compile Include="PlayerMovement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
