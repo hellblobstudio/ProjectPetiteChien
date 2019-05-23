@@ -1,0 +1,6 @@
+F:\petitechien\.mono\temp\bin\Tools\ProjectPetiteChien.dll
+F:\petitechien\.mono\temp\bin\Tools\ProjectPetiteChien.pdb
+F:\petitechien\.mono\temp\obj\Tools\ProjectPetiteChien.csprojAssemblyReference.cache
+F:\petitechien\.mono\temp\obj\Tools\ProjectPetiteChien.csproj.CoreCompileInputs.cache
+F:\petitechien\.mono\temp\obj\Tools\ProjectPetiteChien.dll
+F:\petitechien\.mono\temp\obj\Tools\ProjectPetiteChien.pdb

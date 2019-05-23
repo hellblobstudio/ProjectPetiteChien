@@ -49,6 +49,8 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimationTree.cs" />
+    <Compile Include="Enums.cs" />
     <Compile Include="IDamageable.cs" />
     <Compile Include="PlayerMovement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
